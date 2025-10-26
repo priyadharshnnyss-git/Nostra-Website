@@ -81,3 +81,23 @@ const products = [
 ]
 
 export {products}
+
+let search = document.getElementById('search');
+let container = document.querySelector('.products');
+let dressEl = container.querySelectorAll('div')
+
+search.addEventListener("keyup",()=>{
+    let enteredValue = event.target.value.toUpperCase();
+
+    for(i=0;i<dressEl.length;i++){
+        let productName = dressEl[i].querySelector('h2');
+
+        if(productName.textContent.toUpperCase().indexOf(enteredValue) < 0){
+            dressEl[i].style.display = "none"
+        }
+        else{
+            dressEl[i].style.display = "block"
+        }
+
+    }
+})

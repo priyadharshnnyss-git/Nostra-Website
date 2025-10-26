@@ -495,9 +495,9 @@ input:focus {
 
 .vertical-line {
     border: none;
-    border-left: 3px solid #1D232C; /* Adjust color and width as needed */
-    height: 100%; /* Adjust height as needed */
-    margin: 0 20px; /* Adjust margin as needed */
+    border-left: 3px solid #1D232C; 
+    height: 100%; 
+    margin: 0 20px; 
     position: absolute;
     top: 0px;
     right: 0px
@@ -598,10 +598,10 @@ input:focus {
     background-color: #0056b3;
   }
 
-  /* Add to your style.css */
+  
 .contact-form input.error, 
 .contact-form textarea.error {
-    border: 2px solid #ff4444 !important; /* Red border for error */
+    border: 2px solid #ff4444 !important; 
 }
 
 .products{
